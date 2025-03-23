@@ -9,6 +9,8 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Logon from "./pages/Logon";
 import ResetPassword from "./pages/ResetPassword";
+import EmailVerified from "./pages/email_verified";
+import EmailVerificationFailed from "./pages/email_verification_failed";
 
 const App = () => {
     return (
@@ -23,6 +25,8 @@ const App = () => {
                 <Route path="/login" element={<Login />} /> {/* Login Page */}
                 <Route path="/logon" element={<Logon />} />
                 <Route path="/reset-password/:uidb64/:token" element={<ResetPassword />} />
+                <Route path="/email_verified" element={<EmailVerified />} />
+                <Route path="/email_verification_failed" element={<EmailVerificationFailed />} />
             </Routes>
         </Router>
     );
